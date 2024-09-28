@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//bengalbots.com/sitemap.xsl"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://bengalbots.com/sitemap-pages.xml</loc><lastmod>2024-09-28T00:18:56.996Z</lastmod></sitemap><sitemap><loc>https://bengalbots.com/sitemap-posts.xml</loc><lastmod>2024-09-27T00:45:25.000Z</lastmod></sitemap><sitemap><loc>https://bengalbots.com/sitemap-authors.xml</loc><lastmod>2024-09-28T00:19:15.316Z</lastmod></sitemap><sitemap><loc>https://bengalbots.com/sitemap-tags.xml</loc><lastmod>2024-09-27T00:38:45.000Z</lastmod></sitemap></sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://bengalbots.com/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://bengalbots.com/</loc>
+</url>
+<url>
+<loc>https://bengalbots.com/home/</loc>
+<lastmod>2024-09-27T20:08:15-05:00</lastmod>
+<image:image>
+<image:loc>https://bengalbots.com/media/posts/1/poster13.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
