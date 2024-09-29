@@ -8,7 +8,7 @@ export const siteUrl = "https://bengalbots.com";
 const date = new Date().toISOString();
 // https://astro.build/config
 export default defineConfig({
-    site: siteUrl + "/",
+    site: 'https://bengalbots.com',
 
     integrations: [
         react(),
