@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { InfiniteImg1, InfiniteImg2, PFT, B3_24, Ocean, VexU, PFTHallway} from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+    title="BengalBots | Divisions"
+    description="Divisions Page for BengalBots"
+>
+    <main class="page-content">
+        <Hero
+            heroType="ParallaxImage"
+            client:visible
+            data={{
+                image: PFT.src,
+                content: {
+                    title: "Divisions",
+                    paragraph:
+                        "Here at BengalBots, we structure different project categories as 'divisions'",
+                },
+            }}
+        />
+
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: PFTHallway.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Research & Development",
+                paragraph:
+                    "Our R&D division challenges our members through outreach projects. Here, members will both learn and hone skills to better our communities.",
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                switchPlaces: true,
+                image: {
+                    src: B3_24.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Combat Robotics",
+                paragraph:
+                    "In our combat division, members apply their engineering knowledge to designing and manufacturing 30lb sumo robots to compete in LSU's Bengal Bot Brawl",
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: Ocean.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Marine Robotics",
+                paragraph:
+                    "The marine robotics division is primarily dedicated to teaching our members how to design an autonomous vessel to compete in RobotNation's RoboBoat",
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                switchPlaces: true,
+                image: {
+                    src: VexU.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                },
+                title: "Vex U",
+                paragraph:
+                    "",
+            }}
+        />
+    </main>
+    <Footer />
+</Layout>

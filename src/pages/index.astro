@@ -1,0 +1,40 @@
+---
+import {LogoPoster, PFTImage, PFT} from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+---
+
+<Layout
+    title="BengalBots | Homepage"
+    description="LSU's Robotics Club"
+>
+    <main class="page-content">
+        <Hero
+            client:load
+            heroType="fullPageSlider"
+            data={[
+                {
+                    subtitle: "Welcome to",
+                    title: "BengalBots",
+                    background: LogoPoster.src,
+                    paragraph:
+                        "Louisiana State University's Robotics Club",
+                    button: {
+                        text: "Join the Discord",
+                        link: "https://discord.com/invite/f9rmbGcU4y",
+                    },
+                },
+                {
+                    subtitle: "",
+                    title: "Divisions",
+                    background: PFT.src,
+                    paragraph: "",
+                    button: {
+                        text: "Take a look",
+                        link: "/divisions",
+                    },
+                },
+            ]}
+        />
+    </main>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import { HeroSlider1, LogoPoster } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Contact as ContactModule } from "@modules/Contact";
+import { Hero } from "@modules/Hero";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+    title="BengalBots | Contact"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero
+            heroType="ParallaxImage"
+            client:load
+            data={{
+                image: LogoPoster.src,
+                content: {
+                    title: "Contact",
+                    paragraph:
+                        "",
+                },
+            }}
+        />
+        <ContactModule client:load />
+    </main>
+    <Footer />
+</Layout>
