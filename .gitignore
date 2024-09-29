@@ -5,9 +5,9 @@ dist/
 .astro/
 
 yarn.lock
-
+package-lock.json
 # dependencies
-node_modules/
+# node_modules/
 
 # logs
 npm-debug.log*
