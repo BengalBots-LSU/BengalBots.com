@@ -6,8 +6,8 @@ dist/
 
 yarn.lock
 # package-lock.json
-# dependencies
-# node_modules/
+dependencies
+node_modules/
 
 # logs
 npm-debug.log*
