@@ -23,6 +23,7 @@
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-device-detect": "^2.2.3",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.51.3",
     "sitemap": "^7.1.1",
     "swiper": "^11.1.1",
