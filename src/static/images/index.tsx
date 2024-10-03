@@ -14,6 +14,21 @@ import Ocean from "./Ocean_MattHardy.jpg";
 import VexU from "./VexULogo.png";
 import PFTHallway from "./PFT_Hallway.jpg";
 
+import Adrian from "./Adrian.jpg";
+import Drew from "./Drew.jpg";
+import Jacques from "./Jacques.png";
+import Jai from "./Jai.jpg";
+import John from "./John.jpg";
+import JP from "./JP.jpg";
+import Karma from "./Karma.png";
+import Davis from "./Kyle_Davis.jpg";
+import Stack from "./Kyle_Stack.jpg";
+import Maureen from "./Maureen.jpg";
+import Marc from "./Marc.jpg";
+import Tia from "./Tia.jpg";
+
+
+
 import InfiniteImg1 from "./infinite-img-1.webp";
 import InfiniteImg2 from "./infinite-img-2.webp";
 
@@ -84,4 +99,17 @@ export {
     Ocean,
     VexU,
     PFTHallway,
+    Adrian,
+    Drew,
+    Jacques,
+    Jai,
+    John,
+    JP,
+    Karma,
+    Davis,
+    Stack,
+    Marc,
+    Maureen,
+    Tia,
+
 };
