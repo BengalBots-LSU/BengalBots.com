@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Theme } from "@styles/colors";
+import { Theme, Colors } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
 
 export const SocialsStyled = styled.div`
@@ -41,7 +41,7 @@ export const SocialsLink = styled.a`
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid ${Theme.primary};
+    border-top: 1px solid ${Colors.white};
     padding-top: 20px;
     width: 100%;
     transform: translateY(0);
@@ -52,7 +52,7 @@ export const SocialsLink = styled.a`
     }
 
     p {
-        color: ${Theme.primary};
+        color: ${Colors.white};
         font-size: 20px;
         line-height: 1.2;
     }

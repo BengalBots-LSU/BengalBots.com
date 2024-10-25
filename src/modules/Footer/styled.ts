@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-import { Theme } from "@styles/colors";
+import { Theme, Colors } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
 
 export const FooterStyled = styled.footer`
     width: 100%;
 
-    background: ${Theme.secondary};
+    background: ${Colors.darkLighter};
 
     padding: 90px 0;
 `;
@@ -35,6 +35,6 @@ export const FooterContent = styled.div`
 
     p {
         margin: 0;
-        color: ${Theme.primary};
+        color: ${Colors.white};
     }
 `;

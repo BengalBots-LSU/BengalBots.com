@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import type { FC } from "react";
 
 import IconArrowDown from "./icon-arrow-down.svg";
 import IconArrowCircle from "./icon-arrow-circle.svg";
@@ -39,7 +39,8 @@ export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
     const icon = icons[iconData];
 
     return (
-        <img
+        // biome-ignore lint/a11y/useAltText: <explanation>
+<img
             src={icon.src}
             alt={alt}
             width={icon.width}

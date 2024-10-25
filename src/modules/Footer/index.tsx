@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import type { FC } from "react";
 import * as S from "./styled";
 import { Logo } from "@components/Logo";
 import { Container } from "@components/Container";

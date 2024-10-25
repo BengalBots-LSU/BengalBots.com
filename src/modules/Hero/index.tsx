@@ -1,6 +1,9 @@
 import { type FC } from "react";
 import * as S from "./styled";
-import { TextImage, type TextImageProps } from "./variants/TextImage/TextImage";
+import { 
+    TextImage, 
+    type TextImageProps 
+    } from "./variants/TextImage/TextImage";
 import {
     FullPageSlider,
     type FullPageSliderProps,
@@ -9,6 +12,10 @@ import {
     ParallaxImage,
     type ParallaxImageProps,
 } from "./variants/ParallaxImage/ParallaxImage";
+import {
+    TeamMember,
+    type TeamMemberProps,
+} from "./variants/TeamMember/TeamMember.tsx"; // Ensure this path is correct
 
 /**
  * to avoid passing wrong props to the component
@@ -29,7 +36,11 @@ type HeroProps =
     | {
           heroType: "ParallaxImage";
           data: ParallaxImageProps;
-      };
+      } 
+    | {
+        heroType: "TeamMember";
+        data: TeamMemberProps;
+    }; 
 
 export const Hero: FC<HeroProps> = ({ heroType, data, ...rest }) => {
     /*
@@ -60,11 +71,22 @@ export const Hero: FC<HeroProps> = ({ heroType, data, ...rest }) => {
             HeroTypeOutput = (
                 <ParallaxImage {...(data as ParallaxImageProps)} {...rest} />
             );
+            break;
+        case "TeamMember":
+            HeroTypeOutput = (
+                <TeamMember {...(data as TeamMemberProps)} {...rest} />
+            );
+            break;
     }
 
     const isFullWidth =
         heroType === "fullPageSlider" || heroType === "ParallaxImage";
 
+    if (heroType === "TeamMember") {
+        return (
+            <>{HeroTypeOutput}</>
+        );
+    }
     return (
         <S.HeroWrapper $isFullWidth={isFullWidth}>
             {HeroTypeOutput}

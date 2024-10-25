@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { Theme } from "@styles/colors";
+import { Theme, Colors } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
 
 export const NavigationStyled = styled.div`
@@ -68,7 +68,7 @@ export const NavigationList = styled.ul`
 
     > li a {
         text-decoration: none;
-        color: ${Theme.primary};
+        color: ${Colors.white};
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,7 +89,7 @@ export const NavigationList = styled.ul`
         }
 
         &:hover {
-            background-color: ${Theme.primary};
+            background-color: ${Colors.white};
             color: ${Theme.secondary};
 
             text-shadow: none;

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Theme } from "@styles/colors";
+import { Theme, Colors } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
 
 export const FullPageSliderStyled = styled.div`
@@ -16,7 +16,7 @@ export const FullPageSliderStyled = styled.div`
     height: 100dvh;
     min-height: 550px;
 
-    background: ${Theme.secondary};
+    background: ${Colors.darkLighter};
     position: relative;
     overflow: hidden;
 
@@ -30,7 +30,7 @@ export const FullPageSliderStyled = styled.div`
         z-index: 1;
         width: 100%;
         height: auto;
-        background: ${Theme.tertiary};
+        background: ${Colors.dark};
         max-width: 500px;
         height: 15px;
         text-align: center;
@@ -50,7 +50,7 @@ export const FullPageSliderStyled = styled.div`
         }
 
         span {
-            background: ${Theme.primary};
+            background: ${Colors.white};
             position: absolute;
             left: 0;
             top: 0;
@@ -143,7 +143,7 @@ export const FullPageSliderSlideImg = styled.figure`
 export const FullPageSliderSlideContent = styled.div`
     position: relative;
     z-index: 2;
-    color: ${Theme.primary};
+    color: ${Colors.white};
 
     h1 {
         font-size: 180px;
@@ -169,7 +169,7 @@ export const FullPageSliderSlideContent = styled.div`
 
     h1 + p {
         max-width: 700px;
-        color: ${Theme.primary};
+        color: ${Colors.white};
         font-size: 18px;
         line-height: 25px;
         font-weight: 300;
@@ -187,7 +187,7 @@ export const FullPageSliderSlideContentSubtitle = styled.p`
     line-height: 30px;
     font-weight: 900;
     letter-spacing: -1px;
-    color: ${Theme.primary};
+    color: ${Colors.white};
     margin-bottom: 40px;
 
     ${MediaQuery.max("xl")} {
@@ -212,7 +212,7 @@ export const FullPageSliderTextToSlide = styled.span`
     text-transform: uppercase;
     letter-spacing: -1px;
     line-height: 25px;
-    color: ${Theme.primary};
+    color: ${Colors.white};
     z-index: 1;
 
     display: flex;
