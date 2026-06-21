@@ -1,5 +1,4 @@
 import PFTImage from "../../imports/PFTImage.png";
-import PFT_Hallway from "../../imports/PFT_Hallway.jpg";
 import VEXU from "../../imports/VEXU2026.png";
 import Combat from "../../imports/Combat2026.jpg";
 import RND from "../../imports/RND2025.jpg";
@@ -23,7 +22,7 @@ export default function Divisions() {
     {
       title: "Combat Robotics",
       description:
-        "Design and build 30lb sumo robots for Bengal Bot Brawl.",
+        "Design and build 30lb sumo robots for a Battle Bots style competition, the Bengal Bot Brawl.",
       image: Combat,
     },
     {
@@ -60,7 +59,7 @@ export default function Divisions() {
 
         {divisions.map((d, i) => (
           <div
-            key={i}
+            key={d.title}
             className={`max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10 ${
               i % 2 === 1 ? "md:flex-row-reverse" : ""
             }`}
