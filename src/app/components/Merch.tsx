@@ -1,4 +1,4 @@
-import poster13 from "../../imports/poster13.png";
+import poster13 from "../../../imports/poster13.png";
 
 export default function Merch() {
   // 1. Paste your third-party shop link right here!
