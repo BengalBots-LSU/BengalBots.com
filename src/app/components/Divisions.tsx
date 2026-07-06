@@ -22,7 +22,7 @@ export default function Divisions() {
     {
       title: "Combat Robotics",
       description:
-        "Design and build 30lb sumo robots for a Battle Bots style competition, the Bengal Bot Brawl.",
+        "The Combat Division designs and builds 30lb sumo robots for a Battle Bots style competition, the Bengal Bot Brawl.",
       image: Combat,
     },
     {
