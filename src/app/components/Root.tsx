@@ -132,7 +132,7 @@ export default function Root() {
   <h3 className="font-bold text-white mb-3">Contact</h3>
 
   <p className="text-sm mb-4">
-    Email: Bengalbots@lsu.edu
+    Email: lsu.bengalbots@gmail.com
   </p>
 
   {/* SOCIAL ICON ROW */}

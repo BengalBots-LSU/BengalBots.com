@@ -36,7 +36,7 @@ export default function Involvement() {
           <h2 className="text-3xl font-bold mb-4">Join Our Discord</h2>
 
           <a
-            href="https://discord.com/invite/f9rmbGcU4y"
+            href="https://discord.com/invite/cyKXFknm3g"
             target="_blank"
             className="inline-block px-8 py-3 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition"
           >
