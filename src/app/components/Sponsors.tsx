@@ -22,7 +22,7 @@ export default function Sponsors() {
       <section className="max-w-6xl mx-auto px-4 py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">No sponsors yet</h2>
         <p className="text-gray-600">
-          We are currently seeking partnerships for upcoming seasons. Interested in sponsoring? Send us an email at Bengalbots@lsu.edu!
+          We are currently seeking partnerships for upcoming seasons. Interested in sponsoring? Send us an email at lsu.bengalbots@gmail.com!
         </p>
       </section>
 
