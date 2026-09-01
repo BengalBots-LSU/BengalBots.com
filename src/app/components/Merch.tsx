@@ -2,7 +2,7 @@ import poster13 from "../../imports/poster13.png";
 
 export default function Merch() {
   // 1. Paste your third-party shop link right here!
-  const shopUrl = "https://www.redbubble.com/people/BengalBots/shop";
+  const shopUrl = "https://bengal-bots-lsu-shop.fourthwall.com";
 
   return (
     <div>
