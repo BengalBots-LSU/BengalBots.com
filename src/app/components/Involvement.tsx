@@ -1,4 +1,5 @@
 import poster13 from "../../imports/poster13.png";
+import schedulePdf from "../../imports/BengalBotsFall2026Schedule.pdf";
 
 export default function Involvement() {
   return (
@@ -21,13 +22,24 @@ export default function Involvement() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center space-y-10">
 
-        {/* Schedule Placeholder */}
+        {/* Schedule PDF Embed */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Semester Schedule</h2>
-          <div className="h-64 bg-gray-200 flex items-center justify-center rounded-lg">
-            <span className="text-gray-500">
-              Schedule Image Coming Soon
-            </span>
+          <div className="w-full h-[600px] bg-gray-100 rounded-lg overflow-hidden border border-gray-300">
+            <iframe
+              src={schedulePdf}
+              title="BengalBots Fall 2026 Schedule"
+              className="w-full h-full"
+            />
+          </div>
+          <div className="mt-4">
+            <a
+              href={schedulePdf}
+              download="BengalBotsFall2026Schedule.pdf"
+              className="inline-block px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition"
+            >
+              Download Schedule (PDF)
+            </a>
           </div>
         </div>
 
@@ -38,6 +50,7 @@ export default function Involvement() {
           <a
             href="https://discord.com/invite/cyKXFknm3g"
             target="_blank"
+            rel="noreferrer"
             className="inline-block px-8 py-3 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition"
           >
             Join the Discord
