@@ -22,16 +22,23 @@ export default function Involvement() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center space-y-10">
 
-        {/* Schedule PDF Embed */}
+        {/* Schedule Flyer */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Semester Schedule</h2>
-          <div className="w-full h-[600px] bg-gray-100 rounded-lg overflow-hidden border border-gray-300">
-            <iframe
-              src={schedulePdf}
-              title="BengalBots Fall 2026 Schedule"
-              className="w-full h-full"
-            />
-          </div>
+          <h2 className="text-3xl font-bold mb-6">Semester Schedule</h2>
+          
+          <object
+            data={`${schedulePdf}#toolbar=0&navpanes=0&scrollbar=0`}
+            type="application/pdf"
+            className="w-full h-[1100px] mx-auto block"
+          >
+            <p className="text-gray-600">
+              Unable to display PDF directly.{" "}
+              <a href={schedulePdf} download className="underline text-purple-700">
+                Download the flyer here
+              </a>.
+            </p>
+          </object>
+          
           <div className="mt-4">
             <a
               href={schedulePdf}
