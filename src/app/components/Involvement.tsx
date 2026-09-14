@@ -27,17 +27,17 @@ export default function Involvement() {
           <h2 className="text-3xl font-bold mb-6">Semester Schedule</h2>
           
           <object
-            data={`${schedulePdf}#toolbar=0&navpanes=0&scrollbar=0`}
-            type="application/pdf"
-            className="w-full h-[1100px] mx-auto block"
-          >
-            <p className="text-gray-600">
-              Unable to display PDF directly.{" "}
-              <a href={schedulePdf} download className="underline text-purple-700">
-                Download the flyer here
-              </a>.
-            </p>
-          </object>
+  data={`${schedulePdf}#view=FitH&toolbar=0&navpanes=0&scrollbar=0`}
+  type="application/pdf"
+  className="w-full h-[1100px] mx-auto block"
+>
+  <p className="text-gray-600">
+    Unable to display PDF directly.{" "}
+    <a href={schedulePdf} download className="underline text-purple-700">
+      Download the flyer here
+    </a>.
+  </p>
+</object>
           
           <div className="mt-4">
             <a
