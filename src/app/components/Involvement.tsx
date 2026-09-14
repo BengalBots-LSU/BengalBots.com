@@ -1,5 +1,5 @@
 import poster13 from "../../imports/poster13.png";
-import schedulePdf from "../../imports/BengalBotsFall2026Schedule.pdf";
+import scheduleImage from "../../imports/BengalBotsFall2026Schedule.png";
 
 export default function Involvement() {
   return (
@@ -22,32 +22,15 @@ export default function Involvement() {
       {/* CONTENT */}
       <section className="max-w-6xl mx-auto px-4 py-12 text-center space-y-10">
 
-        {/* Schedule Flyer */}
+        {/* Schedule Flyer Image */}
         <div>
           <h2 className="text-3xl font-bold mb-6">Semester Schedule</h2>
           
-          <object
-  data={`${schedulePdf}#view=FitH&toolbar=0&navpanes=0&scrollbar=0`}
-  type="application/pdf"
-  className="w-full h-[1100px] mx-auto block"
->
-  <p className="text-gray-600">
-    Unable to display PDF directly.{" "}
-    <a href={schedulePdf} download className="underline text-purple-700">
-      Download the flyer here
-    </a>.
-  </p>
-</object>
-          
-          <div className="mt-4">
-            <a
-              href={schedulePdf}
-              download="BengalBotsFall2026Schedule.pdf"
-              className="inline-block px-4 py-2 bg-gray-800 text-white text-sm rounded hover:bg-gray-900 transition"
-            >
-              Download Schedule (PDF)
-            </a>
-          </div>
+          <img
+            src={scheduleImage}
+            alt="BengalBots Fall 2026 Schedule"
+            className="w-full max-w-4xl mx-auto block h-auto"
+          />
         </div>
 
         {/* Discord */}
